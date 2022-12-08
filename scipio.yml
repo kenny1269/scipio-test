@@ -7,7 +7,16 @@ cache:
   local:
     path: /Users/keyu/Desktop/test/scipio-test
 
-packages:
-  - name: Alamofire
-    url: https://github.com/Alamofire/Alamofire
-    from: 5.6.4
+
+pods:
+  - name: Analytics
+    version: 4.1.5
+  - name: Segment-Branch
+    version: 0.1.25
+    git: https://github.com/tkww/Segment-Branch-iOS
+    excludes:
+      - Segment
+  - name: Segment-Mixpanel
+    version: 1.7.2
+    excludes:
+      - Segment
