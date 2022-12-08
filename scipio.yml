@@ -10,13 +10,12 @@ cache:
 
 pods:
   - name: Analytics
-    version: 4.1.5
-  - name: Segment-Branch
-    version: 0.1.25
-    git: https://github.com/tkww/Segment-Branch-iOS
+    version: 4.1.2
+  - name: Segment-Mixpanel
+    version: 1.7.0
     excludes:
       - Segment
-  - name: Segment-Mixpanel
-    version: 1.7.2
+  - name: segment-appsflyer-ios
+    version: 6.2.6
     excludes:
       - Segment
